@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Global Jobs Agency</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="logo">
+            <img src="https://cdn-icons-png.flaticon.com/512/3135/3135686.png" alt="Logo" class="logo-img">
+            <span>Global Jobs Agency</span>
+        </div>
+        <div class="nav-links">
+            <a href="#" class="active">Home</a>
+            <a href="#">Jobs</a>
+            <a href="#">Services</a>
+            <a href="#">About</a>
+            <a href="#">Contact</a>
+            <button class="find-jobs-btn">Find Jobs</button>
+        </div>
+    </nav>
+
+    <header class="hero">
+        <h1>Find Your <span class="highlight">Dream Job</span> Abroad</h1>
+        <p>Connect with top employers around the world. We handle everything from job matching to visa processing.</p>
+        
+        <div class="search-container">
+            <div class="search-box">
+                <input type="text" placeholder="Job title or keywords" id="jobSearch">
+                <input type="text" placeholder="Country or region" id="locationSearch">
+                <button onclick="searchJobs()">Search</button>
+            </div>
+            <div class="popular-searches">
+                Popular: 
+                <a href="#">Hotel Jobs</a>
+                <a href="#">Factory Workers</a>
+                <a href="#">Caregivers</a>
+                <a href="#">Construction</a>
+            </div>
+            <div class="filters">
+                <button>USA</button>
+                <button>Canada</button>
+                <button>UK</button>
+                <button>Qatar</button>
+                <button>Travel Support</button>
+                <button>Certified</button>
+                <button>Visa Sponsored</button>
+                <button>Career Growth</button>
+            </div> 
+        </div>
+
+        <div class="country-badges">
+            <div class="badge">
+                <img src="https://cdn-icons-png.flaticon.com/512/3909/3909383.png" alt="USA">
+                <span>USA</span>
+                <small>4,200+ Jobs</small>
+            </div>
+            <div class="badge">
+                <img src="https://cdn-icons-png.flaticon.com/512/3909/3909383.png" alt="Canada">
+                <span>Canada</span>
+                <small>3,100+ Jobs</small>
+            </div>
+            <div class="badge">
+                <img src="https://cdn-icons-png.flaticon.com/512/3909/3909383.png" alt="UK">
+                <span>UK</span>
+                <small>2,800+ Jobs</small>
+            </div>
+        </div>
+    </header>
+
+    <section class="featured-jobs">
+        <h2>Featured Job Opportunities</h2>
+        <div class="jobs-grid" id="jobsContainer">
+            <!-- Jobs will be populated by JavaScript -->
+        </div>
+        <button class="load-more">Load More Jobs</button>
+    </section>
+
+    <section class="stats">
+        <h2>Our Impact</h2>
+        <div class="stats-container">
+            <div class="stat-card">
+                <div class="stat-number">5,000+</div>
+                <div class="stat-label">Successful Placements</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-number">30+</div>
+                <div class="stat-label">Global Partners</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-number">1,000+</div>
+                <div class="stat-label">Available Jobs</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-number">10+</div>
+                <div class="stat-label">Years Experience</div>
+            </div>
+        </div>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>
